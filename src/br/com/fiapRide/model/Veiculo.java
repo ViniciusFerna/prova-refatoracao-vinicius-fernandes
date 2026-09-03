@@ -6,11 +6,11 @@ public class Veiculo {
 	
 	private String placa;
 	
-	private int gasolina;
+	private double gasolina;
 	
 	private boolean manutencaoEmDia;
 	
-	public Veiculo(String individuo, String placa, int gasolina, boolean manutencaoEmDia) {
+	public Veiculo(String individuo, String placa, double gasolina, boolean manutencaoEmDia) {
 		this.setIndividuo(individuo);
 		this.setPlaca(placa);
 		this.setGasolina(gasolina);
@@ -18,7 +18,7 @@ public class Veiculo {
 	}
 	
 	
-	public void adicionarGasolina(int quantidade) {
+	public void adicionarGasolina(int quantidade) { // Adiciona gasolina no valor já presente
 		if (quantidade < 0) {
 			System.out.println("Valor inválido");
 		} else {
@@ -27,7 +27,7 @@ public class Veiculo {
 		
 	}
 	
-	public void subtrairGasolina(int quantidade) {
+	public void subtrairGasolina(int quantidade) { // Subtai gasolina no valor já presente
 		if (quantidade < 0) {
 			System.out.println("Valor inválido");
 		} else {
@@ -53,11 +53,11 @@ public class Veiculo {
 		this.placa = placa;
 	}
 
-	public int getGasolina() {
+	public double getGasolina() {
 		return gasolina;
 	}
 
-	public void setGasolina(int gasolina) {
+	public void setGasolina(double gasolina) {
 		if (gasolina < 0) { // Caso a gasolina seja menor que 0 setta de volta para 0 e pede denovo
 			System.out.println("Valor inválido. Tente novamente!");
 		} else {

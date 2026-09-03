@@ -29,7 +29,7 @@ public class SistemaPrincipal {
 			
 			System.out.println("------------------------------");
 			
-			Veiculo v2 = new Veiculo("Ronaldo", "DEF-1234", -100, true);
+			Veiculo v2 = new Veiculo("Ronaldo", "DEF-1234", -100, true); //Construtor com valor negativo
 			
 			System.out.println("Dono: " + v2.getIndividuo() + "/ Placa: " + v2.getPlaca() + "/ Gasolina " + v2.getGasolina());
 			
