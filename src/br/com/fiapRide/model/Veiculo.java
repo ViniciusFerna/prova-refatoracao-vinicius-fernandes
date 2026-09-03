@@ -18,7 +18,7 @@ public class Veiculo {
 	}
 	
 	
-	public void adicionarGasolina(int quantidade) { // Adiciona gasolina no valor já presente
+	public void adicionarGasolina(int quantidade) { // Adiciona gasolina no valor já presente na variável
 		if (quantidade < 0) {
 			System.out.println("Valor inválido");
 		} else {
@@ -27,7 +27,7 @@ public class Veiculo {
 		
 	}
 	
-	public void subtrairGasolina(int quantidade) { // Subtai gasolina no valor já presente
+	public void subtrairGasolina(int quantidade) { // Subtrai gasolina no valor já presente na variável
 		if (quantidade < 0) {
 			System.out.println("Valor inválido");
 		} else {
@@ -58,7 +58,7 @@ public class Veiculo {
 	}
 
 	public void setGasolina(double gasolina) {
-		if (gasolina < 0) { // Caso a gasolina seja menor que 0 setta de volta para 0 e pede denovo
+		if (gasolina < 0) { // Caso a gasolina seja menor que 0 não altera e pede denovo
 			System.out.println("Valor inválido. Tente novamente!");
 		} else {
 			this.gasolina = gasolina;
